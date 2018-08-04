@@ -30,6 +30,14 @@
         app:layout_constraintStart_toEndOf="@+id/imageView">
 
         <RadioButton
+            android:id="@+id/rbFeminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminino"
+            android:textSize="10sp" />
+
+        <RadioButton
             android:id="@+id/rbMasculino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,14 +46,6 @@
             android:textSize="10sp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
-
-        <RadioButton
-            android:id="@+id/rbFeminino"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Feminino"
-            android:textSize="10sp" />
 
         <RadioButton
             android:id="@+id/rbOutros"

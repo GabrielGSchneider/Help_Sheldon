@@ -31,4 +31,6 @@ public class Cadastro extends AppCompatActivity {
         EditText senha =  findViewById(R.id.txtSenha);
         EditText descricao = findViewById(R.id.txtDescricao);
     }
+
+
 }
