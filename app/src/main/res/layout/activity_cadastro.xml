@@ -208,4 +208,14 @@
         app:layout_constraintStart_toEndOf="@+id/txtNome"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.569" />
+    
+    <EditText
+        android:id="@+id/txtTurma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Turma"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="282dp" />
 </android.support.constraint.ConstraintLayout>
