@@ -18,18 +18,38 @@ public class Cadastro extends AppCompatActivity {
 
     public void Cadastrar(View v){
 
-        EditText nome = findViewById(R.id.txtNome);
-        EditText idade =  findViewById(R.id.txtIdade);
+       EditText nomeTxt = findViewById(R.id.txtNome);
+        EditText idadeTxt =  findViewById(R.id.txtIdade);
 
-        RadioGroup rg = findViewById(R.id.rbg);
-        RadioButton generoSelecionado = findViewById(rg.getCheckedRadioButtonId());
+        RadioGroup rgTxt = findViewById(R.id.rbg);
+        RadioButton generoSelecionadoTxt = findViewById(rgTxt.getCheckedRadioButtonId());
 
 
-        CheckBox cbHomem = findViewById(R.id.cbHomens);
-        CheckBox cbMulheres = findViewById(R.id.cbMulheres);
+        CheckBox cbHomemTxt = findViewById(R.id.cbHomens);
+        CheckBox cbMulheresTxt = findViewById(R.id.cbMulheres);
 
-        EditText senha =  findViewById(R.id.txtSenha);
-        EditText descricao = findViewById(R.id.txtDescricao);
+        EditText senhaTxt =  findViewById(R.id.txtSenha);
+        EditText descricaoTxt = findViewById(R.id.txtDescricao);
+        EditText turmaTxt = findViewById(R.id.txtTurma);
+
+        String nome = nomeTxt.getText().toString();
+        String idade = idadeTxt.getText().toString();
+        String senha = senhaTxt.getText().toString();
+        String descricao = descricaoTxt.getText().toString();
+        String turma = turmaTxt.getText().toString();
+
+        String genero = generoSelecionadoTxt.getText().toString();
+
+        boolean homem = false;
+        boolean mulher = false;
+
+
+        if(cbHomemTxt.isChecked()){
+            homem = true;
+        }
+        if(cbMulheresTxt.isChecked()){
+            mulher = true;
+        }
     }
 
 
