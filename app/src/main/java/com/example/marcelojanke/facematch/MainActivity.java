@@ -17,14 +17,16 @@ public class MainActivity extends AppCompatActivity {
 
         FloatingActionButton button = findViewById(R.id.Like);
 
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Ola",Toast.LENGTH_LONG).show();
 
-                WebInit init = new WebInit(getApplicationContext(),"https://192.168.2.25");
-
+                WebInit init =
+                        new WebInit(getApplicationContext(),
+                                "http://192.168.2.25/Help_sheldon/SetInfo.php");
                 init.Info();
+
             }
         });
 

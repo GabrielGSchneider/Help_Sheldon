@@ -1,6 +1,8 @@
 package com.example.marcelojanke.facematch.WebRequest;
 
 import android.content.Context;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -25,12 +27,15 @@ public class WebInit {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
+                        Log.d("Naim",response);
+                        Toast.makeText(context,response,Toast.LENGTH_LONG).show();
 
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(context,error.toString(),Toast.LENGTH_LONG).show();
+
 
             }
         });
